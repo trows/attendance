@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.trows.attendance.entity.Punch">
+
+    <insert id="initPunch" parameterType="Punch">
+        INSERT IGNORE INTO punch (account_id) VALUES (#{account_id})
+    </insert>
+
+    <select id="getPunchById" parameterType="Integer" resultType="Punch">
+        SELECT * FROM punch WHERE account_id = #{account_id} limit 1
+    </select>
+
+    <update id="punch" parameterType="Punch">
+        UPDATE IGNORE punch SET day_time = #{day_time},flag = #{flag} WHERE account_id = #{account_id}
+    </update>
+
+</mapper>

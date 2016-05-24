@@ -4,6 +4,9 @@
 <configuration>
     <typeAliases>
         <typeAlias type="com.trows.attendance.entity.Account" alias="Account"/>
+        <typeAlias type="com.trows.attendance.entity.Punch" alias="Punch"/>
+        <typeAlias type="com.trows.attendance.entity.Salary" alias="Salary"/>
+        <typeAlias type="com.trows.attendance.entity.Notice" alias="Notice"/>
 
     </typeAliases>
 </configuration>

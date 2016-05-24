@@ -18,24 +18,28 @@ public abstract class AbstractBaseDao <Entity, Key extends Serializable> impleme
     @Resource
     private Idao<Entity,Serializable> idao;
 
-    public void insert(Entity entity, String operate) {
-        idao.insert(entity, operate);
+    public int insert(Entity entity, String operate) {
+        return idao.insert(entity, operate);
     }
 
-    public void update(Entity entity, String operate) {
-        idao.update(entity, operate);
+    public int update(Entity entity, String operate) {
+        return idao.update(entity, operate);
     }
 
-    public void updateByKey(Key key,String operate){
-        idao.updateByKey(entityClass,key,operate);
+    public int updateByKey(Key key,String operate){
+        return idao.updateByKey(entityClass,key,operate);
     }
 
-    public void deleteByValue(Entity entity, String operate) {
-        idao.deleteByValue(entity, operate);
+    public int deleteByValue(Entity entity, String operate) {
+        return idao.deleteByValue(entity, operate);
     }
 
-    public void deleteByKey( Key key, String operate) {
-        idao.deleteByKey(entityClass,key,operate);
+    public int deleteByKey( Key key, String operate) {
+        return idao.deleteByKey(entityClass,key,operate);
+    }
+
+    public int deleteByStr(String str,String operate){
+        return idao.deleteByStr(entityClass,str,operate);
     }
 
     /**

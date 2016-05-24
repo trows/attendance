@@ -2,10 +2,19 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.trows.labmag.entity.Account">
+<mapper namespace="com.trows.attendance.entity.Account">
 
-    <select id="getGoodsByGid" parameterType="Integer" resultType="Goods">
-        SELECT gid,gname,descr,price,inventory,img FROM goods WHERE gid = #{gid}
+    <insert id="createAccount" parameterType="Account" useGeneratedKeys="true" keyProperty="account_id">
+        INSERT IGNORE INTO account (user_name,sex,age,cellphone,department,level) VALUES
+        (#{user_name},#{sex},#{age},#{cellphone},#{department},#{level})
+    </insert>
+
+    <update id="setPassword" parameterType="Account">
+        UPDATE IGNORE account SET password = #{password} WHERE account_id = #{account_id}
+    </update>
+
+    <select id="getAccountById" parameterType="Integer" resultType="Account">
+        SELECT * FROM account WHERE account_id = #{account_id} limit 1
     </select>
 
 </mapper>

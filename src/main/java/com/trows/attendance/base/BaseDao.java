@@ -12,11 +12,12 @@ public interface BaseDao <Entity,Key extends Serializable>{
      * @param entity
      * @param operate
      */
-    public void insert(Entity entity, String operate);
-    public void update(Entity entity, String operate);
-    public void updateByKey(Key key, String operate);
-    public void deleteByValue(Entity entity, String operate);
-    public void deleteByKey(Key key, String operate);
+    public int insert(Entity entity, String operate);
+    public int update(Entity entity, String operate);
+    public int updateByKey(Key key, String operate);
+    public int deleteByValue(Entity entity, String operate);
+    public int deleteByKey(Key key, String operate);
+    public int deleteByStr(String str,String operate);
 
     /**
      * 获得一列实体

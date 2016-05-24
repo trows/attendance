@@ -12,14 +12,14 @@ import java.util.UUID;
  * 登入拦截器极其token的添加
  */
 
-@WebFilter(filterName = "loginFilter", urlPatterns ={"*.jsp","*.do"},
-        dispatcherTypes = {
-                DispatcherType.FORWARD,
-                DispatcherType.INCLUDE,
-                DispatcherType.REQUEST,
-                DispatcherType.ERROR, DispatcherType.ASYNC
-        }
-)
+//@WebFilter(filterName = "loginFilter", urlPatterns ={"*.jsp","*.do"},
+//        dispatcherTypes = {
+//                DispatcherType.FORWARD,
+//                DispatcherType.INCLUDE,
+//                DispatcherType.REQUEST,
+//                DispatcherType.ERROR, DispatcherType.ASYNC
+//        }
+//)
 public class LoginFilter implements Filter {
 
     public void init(FilterConfig filterConfig) throws ServletException {

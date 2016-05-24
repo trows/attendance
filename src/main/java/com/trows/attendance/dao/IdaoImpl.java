@@ -11,24 +11,28 @@ import java.util.List;
  */
 @Service
 public class IdaoImpl<Entity, Key extends Serializable> extends SqlSessionDaoSupport implements Idao<Entity, Key> {
-    public void insert(Entity entity, String operate) {
-        getSqlSession().insert(entity.getClass().getName() + "." + operate, entity);
+    public int insert(Entity entity, String operate) {
+        return getSqlSession().insert(entity.getClass().getName() + "." + operate, entity);
     }
 
-    public void update(Entity entity, String operate) {
-        getSqlSession().update(entity.getClass().getName() + "." + operate, entity);
+    public int update(Entity entity, String operate) {
+        return getSqlSession().update(entity.getClass().getName() + "." + operate, entity);
     }
 
-    public void updateByKey(Class<Entity> entityClass,Key key,String operate){
-        getSqlSession().update(entityClass.getName() + "." + operate, key);
+    public int updateByKey(Class<Entity> entityClass, Key key, String operate) {
+        return getSqlSession().update(entityClass.getName() + "." + operate, key);
     }
 
-    public void deleteByValue(Entity entity, String operate) {
-        getSqlSession().delete(entity.getClass().getName() + "." + operate, entity);
+    public int deleteByValue(Entity entity, String operate) {
+        return getSqlSession().delete(entity.getClass().getName() + "." + operate, entity);
     }
 
-    public void deleteByKey(Class<Entity> entityClass, Key key, String operate) {
-        getSqlSession().delete(entityClass.getName() + "." + operate, key);
+    public int deleteByKey(Class<Entity> entityClass, Key key, String operate) {
+        return getSqlSession().delete(entityClass.getName() + "." + operate, key);
+    }
+
+    public int deleteByStr(Class<Entity> entityClass, String str, String operate){
+        return getSqlSession().delete(entityClass.getName()+"."+operate,str);
     }
 
     /**

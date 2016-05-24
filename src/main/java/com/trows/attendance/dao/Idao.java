@@ -7,12 +7,13 @@ import java.util.List;
  * Created by Throws_exception on 2015/5/29.
  */
 public interface Idao<Entity,Key extends Serializable> {
-    public void insert(Entity entity, String operate);
-    public void update(Entity entity, String operate);
-    public void updateByKey(Class<Entity> entityClass, Key key, String operate);
-    public void deleteByValue(Entity entity, String operate);
-    public void deleteByKey(Class<Entity> entityClass, Key key, String operate);
+    public int insert(Entity entity, String operate);
+    public int update(Entity entity, String operate);
+    public int updateByKey(Class<Entity> entityClass, Key key, String operate);
+    public int deleteByValue(Entity entity, String operate);
+    public int deleteByKey(Class<Entity> entityClass, Key key, String operate);
 
+    public int deleteByStr(Class<Entity> entityClass, String str, String operate);
     /**
      * 获得一列实体
      * @param key

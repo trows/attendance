@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建账户</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/font-awesome.min.css" rel="stylesheet">
+    <link href="./assert/sweetAlert/sweetalert.css" rel="stylesheet">
+    <link href="css/site.tableBase.css" rel="stylesheet">
+    <link href="css/site.createCourse.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li class="hidden-sm hidden-md"><a href="manageInfo.html">首页</a></li>
+                <li><a href="#">考勤统计</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="./index.html">退出登录</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="myNav">
+    <div class="myTag">
+        <i class="block fa fa-book fa-2x"></i>
+    </div>
+    <div class="navText">
+        <span class="navTitle">
+            创建账户
+        </span>
+        <br>
+        <span class="navDesc">
+            &nbsp;&nbsp;管理员行为请谨慎操作
+        </span>
+    </div>
+</div>
+<hr>
+
+<div class="row adjust">
+    <div class="col-md-3">
+        <div class="declare">
+            <p class="declare-title">操作说明</p>
+            <p>1. 请按照要求键入员工个人信息</p>
+            <p>2. 请务必选择员工职位</p>
+            <p>3. 测试题量填写格式如下：</p>
+            <p>4. 完成所有项目填写请点击 "<strong>创建站账户</strong>" 按钮，系统将自动完成输入校验工作，校验成功操作完成。如失败，请检查输入格式是否有误。并重新提交</p>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <br>
+        <div class="input-group panel-input">
+            <span class="input-group-addon formDesc backColor">姓名</span>
+            <input type="text" class="form-control" placeholder="例：于杰文" id="user_name">
+        </div>
+        <div class="input-group  panel-input">
+            <span class="input-group-addon formDesc backColor">性别</span>
+            <input type="text" class="form-control " placeholder="例：男/女" id="sex">
+        </div>
+        <div class="input-group  panel-input">
+            <span class="input-group-addon formDesc backColor">年龄</span>
+            <input type="text" class="form-control " placeholder="例：22" id="age">
+        </div>
+        <div class="input-group  panel-input">
+            <span class="input-group-addon formDesc backColor">手机</span>
+            <input type="text" class="form-control " placeholder="例：13572965555" id="cellphone">
+        </div>
+        <div class="input-group  panel-input">
+            <span class="input-group-addon formDesc backColor">部门</span>
+            <input type="text" class="form-control " placeholder="IT技术部" id="department">
+        </div>
+
+        <div class="input-group  panel-input">
+            <span class="input-group-addon formDesc backColor">基本工资</span>
+            <input type="text" class="form-control " placeholder="5000" id="base_wage">
+        </div>
+
+        <div class="input-group  panel-input">
+            <span class="input-group-addon formDesc backColor">职位</span>
+            <button class="btn level" onclick="setLevel(this)">部门员工</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn level" onclick="setLevel(this)">部门主管</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn level" onclick="setLevel(this)">管理员</button>
+        </div>
+
+        <div class="btnDiv">
+            <button class="btn myButton" id="submit" data="">确认创建账户</button>
+        </div>
+    </div>
+</div>
+<script src="./js/jquery-2.2.3.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./assert/sweetAlert/sweetalert.min.js"></script>
+<script src="./js/site.createAccount.js"></script>
+</body>
+</html>
