@@ -5,9 +5,8 @@ import com.alibaba.fastjson.JSON;
 import com.trows.attendance.entity.Account;
 import com.trows.attendance.entity.Punch;
 import com.trows.attendance.entity.Salary;
-import com.trows.attendance.service.AccountService;
-import com.trows.attendance.service.PunchService;
-import com.trows.attendance.service.SalaryService;
+import com.trows.attendance.entity.Vacate;
+import com.trows.attendance.service.*;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,6 +19,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 
 /**
@@ -34,6 +34,10 @@ public class AccountController {
     private PunchService punchService;
     @Autowired
     private SalaryService salaryService;
+    @Autowired
+    private VacateService vacateService;
+    @Autowired
+    private NoticeService noticeService;
 
     private void print(HttpServletResponse response, String value) {
         try {
@@ -82,6 +86,7 @@ public class AccountController {
             session.setAttribute("account_id", account_id);
             session.setAttribute("user_name", account.getUser_name());
             session.setAttribute("department", account.getDepartment());
+            session.setAttribute("level",account.getLevel());
 
             switch (account.getLevel()) {
                 case 3:
@@ -113,9 +118,25 @@ public class AccountController {
                 salary.setCount_wage("0");
             }
         }
+
+
+        request.setAttribute("noticeList",noticeService.getListByStr(account.getDepartment(),"getMyNotice"));
         request.setAttribute("salary",salary);
         request.setAttribute("punch",punch);
-        return "./employees_page";
+        List<Vacate> list;
+        if(account.getLevel() == 1){
+            list =  vacateService.getListByKey(account_id,"getMyVacate");
+            request.setAttribute("vacateList",list);
+            return "./employees_page";
+        }else if(account.getLevel() == 2){
+            list = vacateService.getListByStr(account.getDepartment(),"getDepartmentVacate");
+            request.setAttribute("vacateList",list);
+            return "./charge_page";
+        }
+
+
+        return "redirect:./index.html?return_code=300";
+
     }
 
     @RequestMapping("/changePassword.do")

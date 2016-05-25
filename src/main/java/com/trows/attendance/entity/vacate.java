@@ -13,6 +13,7 @@ public class Vacate {
     private int day_num;
     private String reason;
     private int postil;
+    private String postilReason;
     private String create_time;
 
     public int getId() {
@@ -79,11 +80,34 @@ public class Vacate {
         this.postil = postil;
     }
 
+    public String getPostilReason() {
+        return postilReason;
+    }
+
+    public void setPostilReason(String postilReason) {
+        this.postilReason = postilReason;
+    }
+
     public String getCreate_time() {
         return create_time;
     }
 
     public void setCreate_time(String create_time) {
         this.create_time = create_time;
+    }
+
+    @Override
+    public String toString() {
+        return "Vacate{" +
+                "id=" + id +
+                ", account_id=" + account_id +
+                ", user_name='" + user_name + '\'' +
+                ", department='" + department + '\'' +
+                ", start_time='" + start_time + '\'' +
+                ", day_num=" + day_num +
+                ", reason='" + reason + '\'' +
+                ", postil=" + postil +
+                ", create_time='" + create_time + '\'' +
+                '}';
     }
 }

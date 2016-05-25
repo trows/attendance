@@ -47,7 +47,14 @@ $("#submit").bind('click', function submit() {
 
 function setLevel(element) {
     // console.log($(element).text());
-    $(element).text() == '部门员工' ? $("#submit").attr('data', 1) : $("#submit").attr('data', 2);
+    var info = $(element).text();
+    if(info == '部门员工'){
+        $("#submit").attr('data', 1);
+    }else if(info == '部门主管'){
+        $("#submit").attr('data', 2);
+    }else {
+        $("#submit").attr('data', 3);
+    }
 }
 
 function errorTip(value) {

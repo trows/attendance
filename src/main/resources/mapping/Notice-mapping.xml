@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.trows.attendance.entity.Notice">
+
+    <insert id="addNotice" parameterType="Notice">
+        INSERT IGNORE INTO notice (account_id,user_name,range_type,title,content,create_time) VALUES
+        (#{account_id},#{user_name},#{range_type},#{title},#{content},NOW())
+    </insert>
+
+    <select id="getMyNotice" parameterType="String" resultType="Notice">
+        SELECT * FROM notice WHERE range_type = #{department} OR range_type = 'all'
+    </select>
+
+</mapper>

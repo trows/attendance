@@ -16,4 +16,8 @@
         UPDATE IGNORE punch SET day_time = #{day_time},flag = #{flag} WHERE account_id = #{account_id}
     </update>
 
+    <update id="setVacatePunch" parameterType="Punch">
+        UPDATE IGNORE punch SET vacate_time = vacate_time + #{vacate_time} WHERE account_id = #{account_id}
+    </update>
+
 </mapper>

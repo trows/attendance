@@ -7,6 +7,7 @@
         <typeAlias type="com.trows.attendance.entity.Punch" alias="Punch"/>
         <typeAlias type="com.trows.attendance.entity.Salary" alias="Salary"/>
         <typeAlias type="com.trows.attendance.entity.Notice" alias="Notice"/>
+        <typeAlias type="com.trows.attendance.entity.Vacate" alias="Vacate"/>
 
     </typeAliases>
 </configuration>
