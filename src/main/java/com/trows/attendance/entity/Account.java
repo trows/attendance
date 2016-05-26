@@ -11,6 +11,7 @@ public class Account {
     private int sex;
     private int age;
     private String cellphone;
+    private String email;
     private String department;
     private int level;
 
@@ -60,6 +61,14 @@ public class Account {
 
     public void setCellphone(String cellphone) {
         this.cellphone = cellphone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getDepartment() {

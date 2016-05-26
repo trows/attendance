@@ -2,6 +2,7 @@ package com.trows.attendance.controller;
 
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.trows.attendance.entity.Account;
 import com.trows.attendance.entity.Punch;
 import com.trows.attendance.entity.Salary;
@@ -64,11 +65,11 @@ public class AccountController {
         accountService.update(account, "setPassword");
         Punch punch = new Punch();
         punch.setAccount_id(account.getAccount_id());
-        punchService.insert(punch,"initPunch");
+        punchService.insert(punch, "initPunch");
         Salary salary = new Salary();
         salary.setAccount_id(account.getAccount_id());
         salary.setBase_wage(Float.parseFloat(JSON.parseObject(accountStr).getString("base_wage")));
-        salaryService.insert(salary,"initSalary");
+        salaryService.insert(salary, "initSalary");
         this.print(response, result);
     }
 
@@ -81,12 +82,12 @@ public class AccountController {
             return "redirect:./index.html";
         }
         Account account = accountService.getEntityByKey(account_id, "getAccountById");
-        if (account!=null && account.getPassword().equals(DigestUtils.md5Hex(DigestUtils.sha1Hex(password)))) {
+        if (account != null && account.getPassword().equals(DigestUtils.md5Hex(DigestUtils.sha1Hex(password)))) {
             HttpSession session = request.getSession(true);
             session.setAttribute("account_id", account_id);
             session.setAttribute("user_name", account.getUser_name());
             session.setAttribute("department", account.getDepartment());
-            session.setAttribute("level",account.getLevel());
+            session.setAttribute("level", account.getLevel());
 
             switch (account.getLevel()) {
                 case 3:
@@ -100,37 +101,37 @@ public class AccountController {
     }
 
     @RequestMapping("/toEmployeesPage.htm")
-    public String toEmployeesPage(HttpServletRequest request){
-        int account_id = (Integer)request.getSession(true).getAttribute("account_id");
+    public String toEmployeesPage(HttpServletRequest request) {
+        int account_id = (Integer) request.getSession(true).getAttribute("account_id");
         Account account = accountService.getEntityByKey(account_id, "getAccountById");
-        request.setAttribute("account",account);
-        Punch punch = punchService.getEntityByKey(account_id,"getPunchById");
-        Salary salary = salaryService.getEntityByKey(account_id,"getSalaryById");
-        if(salary.getCount_wage() == null){
+        request.setAttribute("account", account);
+        Punch punch = punchService.getEntityByKey(account_id, "getPunchById");
+        Salary salary = salaryService.getEntityByKey(account_id, "getSalaryById");
+        if (salary.getCount_wage() == null) {
             salary.setCount_wage("0");
-        }else {
+        } else {
             SimpleDateFormat df = new SimpleDateFormat("MM");
             int now = Integer.parseInt(df.format(new Date()));
-            String month_wage = JSON.parseObject(salary.getCount_wage()).getString(String.valueOf(now-1));
-            if(month_wage!=null){
+            String month_wage = JSON.parseObject(salary.getCount_wage()).getString(String.valueOf(now - 1));
+            if (month_wage != null) {
                 salary.setCount_wage(month_wage);
-            }else {
+            } else {
                 salary.setCount_wage("0");
             }
         }
 
 
-        request.setAttribute("noticeList",noticeService.getListByStr(account.getDepartment(),"getMyNotice"));
-        request.setAttribute("salary",salary);
-        request.setAttribute("punch",punch);
+        request.setAttribute("noticeList", noticeService.getListByStr(account.getDepartment(), "getMyNotice"));
+        request.setAttribute("salary", salary);
+        request.setAttribute("punch", punch);
         List<Vacate> list;
-        if(account.getLevel() == 1){
-            list =  vacateService.getListByKey(account_id,"getMyVacate");
-            request.setAttribute("vacateList",list);
+        if (account.getLevel() == 1) {
+            list = vacateService.getListByKey(account_id, "getMyVacate");
+            request.setAttribute("vacateList", list);
             return "./employees_page";
-        }else if(account.getLevel() == 2){
-            list = vacateService.getListByStr(account.getDepartment(),"getDepartmentVacate");
-            request.setAttribute("vacateList",list);
+        } else if (account.getLevel() == 2) {
+            list = vacateService.getListByStr(account.getDepartment(), "getDepartmentVacate");
+            request.setAttribute("vacateList", list);
             return "./charge_page";
         }
 
@@ -140,18 +141,44 @@ public class AccountController {
     }
 
     @RequestMapping("/changePassword.do")
-    public void changePassword(HttpServletRequest request,HttpServletResponse response){
+    public void changePassword(HttpServletRequest request, HttpServletResponse response) {
         String origin = request.getParameter("origin");
         String change = request.getParameter("change");
-        int account_id = (Integer)request.getSession(true).getAttribute("account_id");
+        int account_id = (Integer) request.getSession(true).getAttribute("account_id");
         Account account = accountService.getEntityByKey(account_id, "getAccountById");
-        if(account.getPassword().equals(DigestUtils.md5Hex(DigestUtils.sha1Hex(origin)))){
+        if (account.getPassword().equals(DigestUtils.md5Hex(DigestUtils.sha1Hex(origin)))) {
             account.setPassword(DigestUtils.md5Hex(DigestUtils.sha1Hex(change)));
-            this.print(response,accountService.update(account, "setPassword"));
-        }else {
-            this.print(response,0);
+            this.print(response, accountService.update(account, "setPassword"));
+        } else {
+            this.print(response, 0);
         }
 
     }
 
+    @RequestMapping("/getDepartment.do")
+    public void getDepartment(@RequestParam("department") String department, HttpServletResponse response) {
+//        System.out.println(department);
+        List<Account> list = accountService.getListByStr(department.trim(), "getDepartment");
+        this.print(response, JSON.toJSONString(list,SerializerFeature.WriteNullStringAsEmpty,SerializerFeature.WriteNullNumberAsZero,
+                SerializerFeature.WriteMapNullValue));
+    }
+
+    @RequestMapping("/resetPassword.do")
+    public void resetPassword(@RequestParam("account_id") String account_id,HttpServletResponse response){
+        Account account =new Account();
+        account.setAccount_id(Integer.parseInt(account_id));
+        account.setPassword(DigestUtils.md5Hex(DigestUtils.sha1Hex(account_id)));
+        this.print(response,accountService.update(account,"resetPassword"));
+    }
+
+    @RequestMapping("/delAccount.do")
+    public void delAccount(@RequestParam("account_id") int account_id,HttpServletResponse response){
+        this.print(response,accountService.deleteByKey(account_id,"delAccount"));
+    }
+
+    @RequestMapping("/updateAccount.do")
+    public void updateAccount(@RequestParam("data") String data,HttpServletResponse response){
+        Account account = JSON.parseObject(data,Account.class);
+        this.print(response,accountService.update(account,"updateAccount"));
+    }
 }

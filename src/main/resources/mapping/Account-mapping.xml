@@ -17,4 +17,21 @@
         SELECT * FROM account WHERE account_id = #{account_id} limit 1
     </select>
 
+    <select id="getDepartment" parameterType="String" resultType="Account">
+        SELECT account_id,user_name,sex,cellphone,age,email,department,level FROM account WHERE department = #{department}
+    </select>
+
+    <update id="resetPassword" parameterType="Account" >
+        UPDATE IGNORE account SET password = #{password} WHERE account_id = #{account_id}
+    </update>
+
+    <delete id="delAccount" parameterType="Integer">
+        DELETE FROM account WHERE account_id = #{account_id}
+    </delete>
+
+    <update id="updateAccount" parameterType="Account">
+        UPDATE IGNORE account SET department = #{department,jdbcType=VARCHAR},user_name = #{user_name,jdbcType=VARCHAR},
+        sex=#{sex,jdbcType=TINYINT},email=#{email,jdbcType=VARCHAR},cellphone=#{cellphone,jdbcType=VARCHAR} WHERE account_id = #{account_id}
+    </update>
+
 </mapper>

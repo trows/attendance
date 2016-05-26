@@ -12,14 +12,14 @@ import java.util.UUID;
  * 登入拦截器极其token的添加
  */
 
-//@WebFilter(filterName = "loginFilter", urlPatterns ={"*.jsp","*.do"},
-//        dispatcherTypes = {
-//                DispatcherType.FORWARD,
-//                DispatcherType.INCLUDE,
-//                DispatcherType.REQUEST,
-//                DispatcherType.ERROR, DispatcherType.ASYNC
-//        }
-//)
+@WebFilter(filterName = "loginFilter", urlPatterns ={"*.jsp","*.do","*.htm","*.html"},
+        dispatcherTypes = {
+                DispatcherType.FORWARD,
+                DispatcherType.INCLUDE,
+                DispatcherType.REQUEST,
+                DispatcherType.ERROR, DispatcherType.ASYNC
+        }
+)
 public class LoginFilter implements Filter {
 
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -39,10 +39,10 @@ public class LoginFilter implements Filter {
             session.setAttribute("token",token);
         }
         if (session.getAttribute("user_name")==null
-                && !requestPath.endsWith("/index.jsp")
-                && !requestPath.endsWith("/loginCheck.do")
+                && !requestPath.endsWith("/index.html")
+                && !requestPath.endsWith("/checkLogin.do")
                 ){
-            response.sendRedirect("./index/index.jsp?return_code=300");     //用户未登入返回系统登录界面
+            response.sendRedirect("./index.html?return_code=300");     //用户未登入返回系统登录界面
         }else {
             filterChain.doFilter(servletRequest,servletResponse);   //放行
         }

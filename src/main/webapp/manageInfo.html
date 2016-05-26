@@ -25,6 +25,7 @@
             <ul class="nav navbar-nav">
                 <li class="hidden-sm hidden-md"><a href="manageInfo.html">首页</a></li>
                 <li><a href="#" >考勤统计</a></li>
+                <li><a href="./createAccount.html" >创建账户</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
@@ -38,7 +39,7 @@
 <div class="myNav">
     <div class="search">
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="工号或姓名...">
+            <input type="text" class="form-control" placeholder="部门...">
       <span class="input-group-btn">
         <button class="btn btn-default btn-search" type="button" onclick="aim()">搜索</button>
       </span>
@@ -61,40 +62,15 @@
 
 <div id="tip">
     <div id="tipTitle">操作说明</div>
-    请首先在搜索框检索需要管理的员工工号、姓名或部门...<br>
+    请首先在搜索框检索需要管理部门...<br>
     例如：
     <ul>
-        <li>张三</li>
-        <li>05122038</li>
+        <li>IT技术部</li>
     </ul>
 </div>
 
 <table class="table table-striped table-hover table-responsive">
-    <tr onclick="showModal()">
-        <th class="tableTitle">工号</th>
-        <th class="tableTitle">部门</th>
-        <th class="tableTitle">姓名</th>
-    </tr>
-    <tr onclick="showModal()">
-        <th>0123456</th>
-        <th>IT事业部</th>
-        <th>于杰文</th>
-    </tr>
-    <tr onclick="showModal()">
-        <th>0123457</th>
-        <th>IT事业部</th>
-        <th>张三</th>
-    </tr>
-    <tr onclick="showModal()">
-        <th>0123458</th>
-        <th>IT事业部</th>
-        <th>李四</th>
-    </tr>
-    <tr onclick="showModal()">
-        <th>0123459</th>
-        <th>IT事业部</th>
-        <th>王五</th>
-    </tr>
+
 </table>
 
 
@@ -102,11 +78,11 @@
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="myPanel">
 
-        <h3 class="panelTitle">修改学生信息</h3>
+        <h3 class="panelTitle">修改账户信息</h3>
         <div class="panel-text">
             <div class="input-group panel-input">
                 <span class="input-group-addon formDesc">工号</span>
-                <input type="text" class="form-control" placeholder="ID" disabled="disabled">
+                <input type="text" class="form-control" placeholder="id" disabled="disabled">
             </div>
             <div class="input-group  panel-input">
                 <span class="input-group-addon formDesc">部门</span>
@@ -141,6 +117,9 @@
             </div>
             <div class="btn-group" role="group">
                 <button type="button" class="btn btn-danger" onclick="delThis()">删除记录</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default" onclick="promote()">提升主管</button>
             </div>
 
         </div>

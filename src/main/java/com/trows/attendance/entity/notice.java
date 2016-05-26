@@ -7,7 +7,7 @@ public class Notice {
     private int notice_id;
     private int account_id;
     private String user_name;
-    private String range;
+    private String range_type;
     private String title;
     private String content;
     private String create_time;
@@ -36,12 +36,12 @@ public class Notice {
         this.user_name = user_name;
     }
 
-    public String getRange() {
-        return range;
+    public String getRange_type() {
+        return range_type;
     }
 
-    public void setRange(String range) {
-        this.range = range;
+    public void setRange_type(String range_type) {
+        this.range_type = range_type;
     }
 
     public String getTitle() {
@@ -66,5 +66,18 @@ public class Notice {
 
     public void setCreate_time(String create_time) {
         this.create_time = create_time;
+    }
+
+    @Override
+    public String toString() {
+        return "Notice{" +
+                "notice_id=" + notice_id +
+                ", account_id=" + account_id +
+                ", user_name='" + user_name + '\'' +
+                ", range_type='" + range_type + '\'' +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", create_time='" + create_time + '\'' +
+                '}';
     }
 }

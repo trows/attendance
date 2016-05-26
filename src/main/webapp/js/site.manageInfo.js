@@ -5,46 +5,17 @@ window.onload = function () {
 var pubTr;
 var pubClass;
 
-//删除班级
-function delAll() {
-    sweetAlert({
-        title: '确认删除班级：' + pubClass + '?',
-        text: "您将删除与此班级相关的所有数据！请谨慎操作",
-        type: "warning",
-        showCancelButton: true,
-        cancelButtonText: "取消",
-        confirmButtonColor: "#DD6B55",
-        confirmButtonText: "删除",
-        closeOnConfirm: true
-    }, function () {
-        $.post("../delClass.do",
-            {class_name: pubClass},
-            function (data, status) {
-                if (data != 0 && check(data, status)) {
-                    $("table:first").empty();
-                    checkDataArea();
-                } else {
-                    sweetAlert("error", "删除失败", "error");
-                }
-
-            }
-        );
-    });
-}
-
-
 // 填充模态框内容
-function showModal() {
-    // pubTr = tr;
-    // var jsonData = eval("(" + tr.getAttribute('data') + ")");
-    // var list = $("input");
-    // list[1].value = jsonData.account_id;
-    // list[2].value = jsonData.class_name;
-    // list[3].value = jsonData.serial_number;
-    // list[4].value = jsonData.user_name;
-    // list[5].value = jsonData.sex ? '男' : '女';
-    // list[6].value = jsonData.email;
-    // list[7].value = jsonData.cellphone;
+function showModal(tr) {
+    pubTr = tr;
+    var jsonData = eval("(" + tr.getAttribute('data') + ")");
+    var list = $("input");
+    list[1].value = jsonData.account_id;
+    list[2].value = jsonData.department;
+    list[3].value = jsonData.user_name;
+    list[4].value = jsonData.sex ? '男' : '女';
+    list[5].value = jsonData.email;
+    list[6].value = jsonData.cellphone;
     $('#myModal').modal({backdrop: 'static', keyboard: true});
 }
 
@@ -52,51 +23,25 @@ function showModal() {
 function edit() {
 
 
-    var subData = eval("(" + pubTr.getAttribute('data') + ")");
-    var perData = eval("(" + pubTr.getAttribute('data') + ")");
+    var subData = eval("({})");
     // console.log(pubTr.getAttribute('data'));
     // console.log(JSON.stringify(perData));
     var list = $("input");
-    var modify = "";
 
-    if (list[2].value != perData.class_name) {
-
-        modify += '班级修改为:' + list[2].value + '\n';
-        subData.class_name = list[2].value;
-    }
-    if( list[3].value != perData.serial_number){
-        modify+='班内序号修改为:'+ list[3].value + '\n';
-        subData.serial_number = list[3].value;
-    }
-    if (list[4].value != perData.user_name) {
-        modify += '姓名修改为:' + list[4].value + '\n';
-        subData.user_name = list[4].value;
+    var length = list.length;
+    for(var i=1;i<length;i++){
+        subData[$(list[i]).attr('placeholder')] = $(list[i]).val();
     }
 
-
-
-    if ( ((list[5].value=='男')?'1':'0')!= perData.sex) {
-        modify += '性别修改为:' + list[5].value + '\n';
-        subData.sex = (list[5].value=='男')?1:0;
+    if(subData.sex == '男'){
+        subData.sex = 1;
+    }else {
+        subData.sex = 0;
     }
-    if (list[6].value != perData.email) {
-        modify += '邮箱修改为:' + list[6].value + '\n';
-        subData.email = list[6].value;
-    }
-    if (list[7].value != perData.cellphone) {
-        modify += '手机修改为:' + list[7].value;
-        subData.cellphone = list[7].value;
-    }
-
-    if (JSON.stringify(perData) == JSON.stringify(subData)) {
-        sweetAlert("未检测到修改", "系统未检测到存在修改的内容！", "warning");
-        return;
-    }
-
 
     sweetAlert({
         title: '确认提交此次修改？',
-        text: modify,
+        text: '此操作将不可撤销',
         type: "warning",
         showCancelButton: true,
         cancelButtonText: "取消",
@@ -104,15 +49,14 @@ function edit() {
         confirmButtonText: "确认修改",
         closeOnConfirm: true
     }, function () {
-        $.post("../alertStudentInfo.do",
-            {json: JSON.stringify(subData)},
+        $.post("./updateAccount.do",
+            {data: JSON.stringify(subData)},
             function (data, status) {
                 if (data != 0 && check(data, status)) {
 
-                    var htm = '<th>' + subData.class_name + '</th>' +
-                        '<th>' + subData.serial_number + '</th>' +
-                        '<th>' + subData.account_id + '</th>' +
-                        '<th>' + subData.user_name + '</th>' +
+                    var htm = '<th>' + list[i].account_id + '</th>' +
+                        '<th>' + list[i].department + '</th>' +
+                        '<th>' + list[i].user_name + '</th>';
                     $(pubTr).empty();
                     $(pubTr).attr("data",JSON.stringify(subData));
                     $(pubTr).append(htm);
@@ -139,42 +83,17 @@ function aim() {
         setTimeout('sweetAlert("warning", "输入不能为空！", "warning")',100);
         return;
     }
-    var target, type;
-    // console.log(!isNaN(inputText.substr(-4))+'--'+inputText.substr(-4));
-    if (isNaN(inputText)) {
 
-        // console.log(inputText.substr(-5,1));
-        // console.log(isNaN(inputText.substr(-5,1)));
-        if (!isNaN(inputText.substr(-5, 1))) {
-            sweetAlert("error", "错误的搜索参数", "error");
-            return;
-        }
-
-        if (inputText.length > 5 && !isNaN(inputText.substr(-4))) {
-            target = '../getStudentsByClass.do';
-            type = '班级';
-        } else {
-            target = '../getStudentsByName.do';
-            type = '姓名';
-        }
-
-    } else {
-        target = '../getStudentsById.do';
-        type = '学号';
-    }
-    // console.log(keyword);
-    $.post(target,
-        {data: inputText},
+    $.post(
+        './getDepartment.do',
+        {department: inputText},
         function (data, status) {
             if (check(data, status)) {
-                if (data == "empty") {
-                    sweetAlert('NOT FOUND', "未找到" + type + ' : ' + inputText + '\n相关的信息', "info");
+                console.log(data);
+                if (data == "[]") {
+                    sweetAlert('NOT FOUND', '未找到 : ' + inputText + '\n相关的信息', "info");
                 } else {
                     createTable(data);
-                    if (type == '班级') {
-                        pubClass = inputText;
-                        $("#myButton").append('<button type="button" class="btn btn-danger" onclick=delAll()>删除这个班级</button>');
-                    }
                 }
             }
         });
@@ -187,9 +106,8 @@ function createTable(data) {
     var table = $("table:first");
     table.empty();
     var title = '<tr>' +
-        '<th class="tableTitle">班级</th>' +
-        '<th class="tableTitle">班内序号</th>' +
-        '<th class="tableTitle">学号</th>' +
+        '<th class="tableTitle">工号</th>' +
+        '<th class="tableTitle">部门</th>' +
         '<th class="tableTitle">姓名</th>' +
         '</tr>';
     table.append(title);
@@ -198,9 +116,8 @@ function createTable(data) {
     for (var i = 0; i < length; i++) {
         // console.log(list[i]);
         var tr = '<tr onclick=showModal(this) data = \'' + JSON.stringify(list[i]) + '\'>' +
-            '<th>' + list[i].class_name + '</th>' +
-            '<th>' + list[i].serial_number + '</th>' +
             '<th>' + list[i].account_id + '</th>' +
+            '<th>' + list[i].department + '</th>' +
             '<th>' + list[i].user_name + '</th>' +
             '</tr>';
         table.append(tr);
@@ -229,7 +146,7 @@ function delThis() {
         confirmButtonText: "删除",
         closeOnConfirm: true
     }, function () {
-        $.post("../delAccount.do",
+        $.post("./delAccount.do",
             {account_id: jsonData.account_id},
             function (data, status) {
                 if (data == "1" && check(data, status)) {
@@ -281,7 +198,7 @@ function resetPassword() {
         confirmButtonText: "",
         closeOnConfirm: false
     }, function () {
-        $.post("../resetPassword.do",
+        $.post("./resetPassword.do",
             {account_id: jsonData.account_id},
             function (data, status) {
                 // console.log(data,status);
