@@ -20,4 +20,8 @@
         UPDATE IGNORE punch SET vacate_time = vacate_time + #{vacate_time} WHERE account_id = #{account_id}
     </update>
 
+    <update id="resetPunch" parameterType="Integer">
+        UPDATE IGNORE punch SET month_time = month_time+day_time,day_time = 0,flag = 0
+    </update>
+
 </mapper>
