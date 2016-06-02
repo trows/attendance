@@ -24,7 +24,7 @@
     <div class="myHeadImg">
         <img src="./images/1.jpg">
     </div>
-    <span class="title">hello  </span><span class="name">${account.user_name}主管</span>
+    <span class="title">hello  </span><span class="name">${account.user_name}主管</span><a class="moveRight" href="/loginOut.htm">退出登录</a>
     <div class="tip"> 点击下方按钮进行打卡操作！</div>
 
     <div class="punch" onclick="punch()">punch</div>
@@ -146,6 +146,7 @@
             </table>
             <button type="button" class="btn btn-info" onclick="notice()">发布通告</button>
         </div>
+
 
     </div>
     <div class="col-lg-1">

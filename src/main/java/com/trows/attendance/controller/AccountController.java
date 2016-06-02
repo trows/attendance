@@ -179,6 +179,18 @@ public class AccountController {
     @RequestMapping("/updateAccount.do")
     public void updateAccount(@RequestParam("data") String data,HttpServletResponse response){
         Account account = JSON.parseObject(data,Account.class);
+        System.out.println(account);
         this.print(response,accountService.update(account,"updateAccount"));
+    }
+
+    @RequestMapping("/loginOut.htm")
+    public String loginOut(HttpServletRequest request){
+        request.getSession(true).invalidate();
+        return "redirect:./index.html";
+    }
+
+    @RequestMapping("/promote.do")
+    public void promote(@RequestParam("account_id") int account_id,HttpServletResponse response){
+        this.print(response,accountService.updateByKey(account_id,"promote"));
     }
 }

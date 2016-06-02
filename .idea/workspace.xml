@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c8d35a5-91f2-4c65-82e9-cf886820bfca" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/attendance_count.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/trows/attendance/common/filter/LoginFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/trows/attendance/common/filter/LoginFilter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/trows/attendance/controller/AccountController.java" afterPath="$PROJECT_DIR$/src/main/java/com/trows/attendance/controller/AccountController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/trows/attendance/controller/PunchController.java" afterPath="$PROJECT_DIR$/src/main/java/com/trows/attendance/controller/PunchController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/trows/attendance/entity/Account.java" afterPath="$PROJECT_DIR$/src/main/java/com/trows/attendance/entity/Account.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/trows/attendance/entity/notice.java" afterPath="$PROJECT_DIR$/src/main/java/com/trows/attendance/entity/notice.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapping/Account-mapping.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapping/Account-mapping.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/charge_page.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/charge_page.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/createAccount.html" afterPath="$PROJECT_DIR$/src/main/webapp/createAccount.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/site.base.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/site.base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/employees_page.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/employees_page.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/site.manageInfo.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/site.manageInfo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/manageInfo.html" afterPath="$PROJECT_DIR$/src/main/webapp/manageInfo.html" />
     </list>
@@ -27,77 +31,37 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DockManager">
-    <window id="5">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="manageInfo.html" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/main/webapp/manageInfo.html">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="396">
-                    <caret line="52" column="18" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="18" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="attendance" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="site.createAccount.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/site.createAccount.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AccountController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/controller/AccountController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1313">
-              <caret line="180" column="63" selection-start-line="180" selection-start-column="63" selection-end-line="180" selection-end-column="63" />
+            <state relative-caret-position="427">
+              <caret line="180" column="0" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <file leaf-file-name="manageInfo.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/manageInfo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="27" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="27" />
+            <state relative-caret-position="0">
+              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.manageInfo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/site.manageInfo.js">
+      <file leaf-file-name="attendance_count.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/attendance_count.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="63" column="24" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="employees_page.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/employees_page.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
-              <caret line="128" column="49" selection-start-line="128" selection-start-column="49" selection-end-line="128" selection-end-column="49" />
+            <state relative-caret-position="364">
+              <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -106,63 +70,9 @@
       <file leaf-file-name="createAccount.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/createAccount.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="87" column="83" selection-start-line="87" selection-start-column="76" selection-end-line="87" selection-end-column="85" />
+            <state relative-caret-position="360">
+              <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="charge_page.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/charge_page.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="655">
-              <caret line="194" column="14" selection-start-line="194" selection-start-column="14" selection-end-line="194" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Account-mapping.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/Account-mapping.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="33" column="139" selection-start-line="33" selection-start-column="139" selection-end-line="33" selection-end-column="139" />
-              <folding>
-                <marker date="1464183658520" expanded="true" signature="558:639" placeholder="UPDATE IGNOR... " />
-                <marker date="1464183658520" expanded="true" signature="741:803" placeholder="SELECT * FRO... account" />
-                <marker date="1464183658520" expanded="true" signature="903:1017" placeholder="SELECT accou... account" />
-                <marker date="1464183658520" expanded="true" signature="1098:1179" placeholder="UPDATE IGNOR... " />
-                <marker date="1464183658520" expanded="true" signature="1256:1308" placeholder="DELETE FROM " />
-                <marker date="1464183658520" expanded="true" signature="1388:1641" placeholder="UPDATE IGNOR... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Notice-mapping.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/Notice-mapping.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="83" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
-              <folding>
-                <marker date="1464178562725" expanded="true" signature="538:613" placeholder="SELECT * FRO... notice" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Vacate-mapping.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/Vacate-mapping.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="29" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="29" />
-              <folding>
-                <marker date="1464174533311" expanded="true" signature="563:624" placeholder="SELECT * FRO... vacate" />
-                <marker date="1464174533311" expanded="true" signature="729:790" placeholder="SELECT * FRO... vacate" />
-                <marker date="1464174533311" expanded="true" signature="862:953" placeholder="UPDATE IGNOR... " />
-                <marker date="1464174533311" expanded="true" signature="1053:1098" placeholder="SELECT * FRO... vacate" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -193,15 +103,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/editCourseInfo.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/site.editCourseInfo.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/editStuInfo.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/site.tableBase.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/assert/js/scripts.js" />
         <option value="$PROJECT_DIR$/src/main/resources/config/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/trows/attendance/service/AccountService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trows/attendance/serviceImpl/AccountServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/createAccount.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/trows/attendance/base/BaseDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trows/attendance/base/AbstractBaseDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trows/attendance/dao/Idao.java" />
@@ -219,7 +126,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/trows/attendance/serviceImpl/PunchServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trows/attendance/serviceImpl/NoticeServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapping/Salary-mapping.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trows/attendance/controller/PunchController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trows/attendance/entity/vacate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trows/attendance/service/VacateService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trows/attendance/serviceImpl/VacateServiceImpl.java" />
@@ -229,20 +135,24 @@
         <option value="$PROJECT_DIR$/src/main/webapp/css/site.employees_page.css" />
         <option value="$PROJECT_DIR$/src/main/resources/mapping/Vacate-mapping.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/trows/attendance/controller/VacateController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapping/Punch-mapping.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/trows/attendance/entity/Notice.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapping/Notice-mapping.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/trows/attendance/controller/NoticeController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/charge_page.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/site.charge_page.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/site.employees_page.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/employees_page.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/site.createAccount.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/trows/attendance/common/filter/LoginFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/site.employees_page.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/trows/attendance/entity/Account.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapping/Account-mapping.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trows/attendance/controller/AccountController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/site.manageInfo.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/site.base.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/charge_page.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/employees_page.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trows/attendance/controller/AccountController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/Account-mapping.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/Punch-mapping.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trows/attendance/controller/PunchController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/attendance_count.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/createAccount.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/manageInfo.html" />
       </list>
     </option>
@@ -320,9 +230,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -783,12 +690,15 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../labmag" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../awareness" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -797,18 +707,18 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\ideaWorkPlace\attendance\src\main\resources\mapping" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\ideaWorkPlace\attendance\src\main\webapp" />
       <recent name="F:\ideaWorkPlace\attendance\src\main\resources\mapping" />
       <recent name="F:\ideaWorkPlace\attendance\src\main\webapp\js" />
-      <recent name="F:\ideaWorkPlace\attendance\src\main\webapp" />
       <recent name="F:\ideaWorkPlace\attendance\src\main\webapp\assert\js" />
       <recent name="F:\ideaWorkPlace\attendance\src\main\webapp\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\ideaWorkPlace\attendance\src\main\resources\mapping" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.tomact7">
@@ -1388,7 +1298,16 @@
       <workItem from="1464084085498" duration="9794000" />
       <workItem from="1464094422401" duration="225000" />
       <workItem from="1464156663555" duration="27834000" />
-      <workItem from="1464254763054" duration="100000" />
+      <workItem from="1464254763054" duration="750000" />
+      <workItem from="1464335842168" duration="19000" />
+      <workItem from="1464340648436" duration="111000" />
+      <workItem from="1464505934372" duration="104000" />
+      <workItem from="1464509110517" duration="1561000" />
+      <workItem from="1464517913112" duration="31000" />
+      <workItem from="1464799822468" duration="633000" />
+      <workItem from="1464808022599" duration="428000" />
+      <workItem from="1464855608163" duration="2251000" />
+      <workItem from="1464860209842" duration="7716000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;0.1 build&gt;完成登陆页面及员工首页编写">
       <created>1461742920098</created>
@@ -1418,11 +1337,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464180358500</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="&lt;0.5 build&gt;补全管理员功能">
+      <created>1464254910954</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1464254910954</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84819000" />
+    <option name="totallyTimeSpent" value="98323000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1448" y="-138" width="1456" height="876" extended-state="6" />
@@ -1431,6 +1357,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3306962" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1438,25 +1365,24 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37989557" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28720626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21111111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5287206" sideWeight="0.49722221" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5287206" sideWeight="0.49722221" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3306962" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3067885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32767624" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1476,7 +1402,8 @@
     <MESSAGE value="&lt;0.2 build&gt;完成基础页面" />
     <MESSAGE value="&lt;0.3 build&gt;完成用户打卡功能" />
     <MESSAGE value="&lt;0.4 build&gt;完成员工与主管功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="&lt;0.4 build&gt;完成员工与主管功能" />
+    <MESSAGE value="&lt;0.5 build&gt;补全管理员功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="&lt;0.5 build&gt;补全管理员功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1487,21 +1414,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1828">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/site.tableBase.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1520,20 +1432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/base/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/dao/Idao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="15" column="82" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
         </state>
       </provider>
     </entry>
@@ -1564,9 +1462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="e#342#343#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1574,23 +1469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="e#297#298#0" expanded="false" />
-            <element signature="e#346#347#0" expanded="false" />
-            <element signature="e#390#391#0" expanded="false" />
-            <element signature="e#425#426#0" expanded="false" />
-            <element signature="e#457#458#0" expanded="false" />
-            <element signature="e#506#507#0" expanded="false" />
-            <element signature="e#548#549#0" expanded="false" />
-            <element signature="e#585#586#0" expanded="false" />
-            <element signature="e#618#619#0" expanded="false" />
-            <element signature="e#670#671#0" expanded="false" />
-            <element signature="e#714#715#0" expanded="false" />
-            <element signature="e#751#752#0" expanded="false" />
-            <element signature="e#784#785#0" expanded="false" />
-            <element signature="e#836#837#0" expanded="false" />
-            <element signature="e#880#881#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1629,14 +1507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/serviceImpl/AccountServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="12" column="89" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/serviceImpl/NoticeServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1648,7 +1518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1676,13 +1545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/controller/PunchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-129">
-          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/site.index.modal.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1702,20 +1564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="82" column="37" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
-          <folding>
-            <element signature="e#419#420#0" expanded="false" />
-            <element signature="e#444#445#0" expanded="false" />
-            <element signature="e#1651#1652#0" expanded="false" />
-            <element signature="e#1707#1708#0" expanded="false" />
-            <element signature="e#1755#1756#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/dao/IdaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-972">
-          <caret line="0" column="33" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1723,13 +1571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
           <caret line="108" column="19" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/base/AbstractBaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1756,18 +1597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/Punch-mapping.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <marker date="1464174926269" expanded="true" signature="428:488" placeholder="SELECT * FRO... punch" />
-            <marker date="1464174926269" expanded="true" signature="558:652" placeholder="UPDATE IGNOR... " />
-            <marker date="1464174926269" expanded="true" signature="731:830" placeholder="UPDATE IGNOR... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/Vacate-mapping.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -1785,15 +1614,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/site.charge_page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="156" column="1" selection-start-line="150" selection-start-column="0" selection-end-line="156" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1801,16 +1621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
           <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/site.employees_page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="134" column="9" selection-start-line="134" selection-start-column="9" selection-end-line="134" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!doc;n#submitChange#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1824,63 +1634,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/entity/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="65" column="30" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
-          <folding>
-            <element signature="e#386#387#0" expanded="false" />
-            <element signature="e#419#420#0" expanded="false" />
-            <element signature="e#1282#1283#0" expanded="false" />
-            <element signature="e#1324#1325#0" expanded="false" />
-            <element signature="e#1358#1359#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/controller/NoticeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/site.createAccount.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
           <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/site.manageInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="63" column="24" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/Account-mapping.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="139" selection-start-line="33" selection-start-column="139" selection-end-line="33" selection-end-column="139" />
-          <folding>
-            <marker date="1464183658520" expanded="true" signature="558:639" placeholder="UPDATE IGNOR... " />
-            <marker date="1464183658520" expanded="true" signature="741:803" placeholder="SELECT * FRO... account" />
-            <marker date="1464183658520" expanded="true" signature="903:1017" placeholder="SELECT accou... account" />
-            <marker date="1464183658520" expanded="true" signature="1098:1179" placeholder="UPDATE IGNOR... " />
-            <marker date="1464183658520" expanded="true" signature="1256:1308" placeholder="DELETE FROM " />
-            <marker date="1464183658520" expanded="true" signature="1388:1641" placeholder="UPDATE IGNOR... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/controller/AccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1313">
-          <caret line="180" column="63" selection-start-line="180" selection-start-column="63" selection-end-line="180" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1888,38 +1645,207 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="27" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/dao/Idao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="18" selection-start-line="9" selection-start-column="1" selection-end-line="15" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/dao/IdaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="36" column="0" selection-start-line="13" selection-start-column="3" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/base/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="19" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/base/AbstractBaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#561#562#0" expanded="false" />
+            <element signature="e#612#613#0" expanded="false" />
+            <element signature="e#668#669#0" expanded="false" />
+            <element signature="e#719#720#0" expanded="false" />
+            <element signature="e#772#773#0" expanded="false" />
+            <element signature="e#836#837#0" expanded="false" />
+            <element signature="e#899#900#0" expanded="false" />
+            <element signature="e#957#958#0" expanded="false" />
+            <element signature="e#1013#1014#0" expanded="false" />
+            <element signature="e#1077#1078#0" expanded="false" />
+            <element signature="e#1133#1134#0" expanded="false" />
+            <element signature="e#1197#1198#0" expanded="false" />
+            <element signature="e#1356#1357#0" expanded="false" />
+            <element signature="e#1423#1424#0" expanded="false" />
+            <element signature="e#1496#1497#0" expanded="false" />
+            <element signature="e#1555#1556#0" expanded="false" />
+            <element signature="e#1620#1621#0" expanded="false" />
+            <element signature="e#1687#1688#0" expanded="false" />
+            <element signature="e#1841#1842#0" expanded="false" />
+            <element signature="e#1910#1911#0" expanded="false" />
+            <element signature="e#1979#1980#0" expanded="false" />
+            <element signature="e#2040#2041#0" expanded="false" />
+            <element signature="e#2102#2103#0" expanded="false" />
+            <element signature="e#2171#2172#0" expanded="false" />
+            <element signature="e#2326#2327#0" expanded="false" />
+            <element signature="e#2384#2385#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/site.employees_page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1998">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/serviceImpl/AccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="12" column="89" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/site.charge_page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/controller/NoticeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="50" column="59" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/site.base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/entity/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="90" column="18" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
+          <folding>
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1282#1283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/controller/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="180" column="0" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/Punch-mapping.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <marker date="1464868626837" expanded="true" signature="428:488" placeholder="SELECT * FRO... punch" />
+            <marker date="1464868626837" expanded="true" signature="558:652" placeholder="UPDATE IGNOR... " />
+            <marker date="1464868626837" expanded="true" signature="731:830" placeholder="UPDATE IGNOR... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/charge_page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/Account-mapping.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+          <folding>
+            <marker date="1464868536941" expanded="true" signature="558:639" placeholder="UPDATE IGNOR... " />
+            <marker date="1464868536941" expanded="true" signature="741:803" placeholder="SELECT * FRO... account" />
+            <marker date="1464868536941" expanded="true" signature="903:1017" placeholder="SELECT accou... account" />
+            <marker date="1464868536941" expanded="true" signature="903:1046" placeholder="SELECT accou... account" />
+            <marker date="1464868536941" expanded="true" signature="1127:1208" placeholder="UPDATE IGNOR... " />
+            <marker date="1464868536941" expanded="true" signature="1285:1337" placeholder="DELETE FROM " />
+            <marker date="1464868536941" expanded="true" signature="1417:1670" placeholder="UPDATE IGNOR... " />
+            <marker date="1464868536941" expanded="true" signature="1744:1812" placeholder="UPDATE IGNOR... " />
+            <marker date="1464868536941" expanded="true" signature="1889:1910" placeholder="SELECT * FRO... account" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/site.manageInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="122" column="20" selection-start-line="118" selection-start-column="17" selection-end-line="122" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/employees_page.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="128" column="49" selection-start-line="128" selection-start-column="49" selection-end-line="128" selection-end-column="49" />
+        <state relative-caret-position="360">
+          <caret line="26" column="134" selection-start-line="26" selection-start-column="134" selection-end-line="26" selection-end-column="134" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trows/attendance/controller/PunchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="65" column="42" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/attendance_count.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/createAccount.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="87" column="83" selection-start-line="87" selection-start-column="76" selection-end-line="87" selection-end-column="85" />
+        <state relative-caret-position="360">
+          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/manageInfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="52" column="18" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/charge_page.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="194" column="14" selection-start-line="194" selection-start-column="14" selection-end-line="194" selection-end-column="14" />
+        <state relative-caret-position="0">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
           <folding />
         </state>
       </provider>

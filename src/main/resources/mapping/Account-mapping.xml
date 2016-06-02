@@ -18,7 +18,7 @@
     </select>
 
     <select id="getDepartment" parameterType="String" resultType="Account">
-        SELECT account_id,user_name,sex,cellphone,age,email,department,level FROM account WHERE department = #{department}
+        SELECT account_id,user_name,sex,cellphone,age,email,department,level FROM account WHERE department = #{department} OR user_name = #{department}
     </select>
 
     <update id="resetPassword" parameterType="Account" >
@@ -33,5 +33,13 @@
         UPDATE IGNORE account SET department = #{department,jdbcType=VARCHAR},user_name = #{user_name,jdbcType=VARCHAR},
         sex=#{sex,jdbcType=TINYINT},email=#{email,jdbcType=VARCHAR},cellphone=#{cellphone,jdbcType=VARCHAR} WHERE account_id = #{account_id}
     </update>
+
+    <update id="promote" parameterType="Integer">
+        UPDATE IGNORE account SET level = 2 WHERE account_id = #{account_id}
+    </update>
+
+    <select id="getAllAccount" resultType="Account">
+        SELECT * FROM account
+    </select>
 
 </mapper>

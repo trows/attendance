@@ -49,14 +49,15 @@ function edit() {
         confirmButtonText: "确认修改",
         closeOnConfirm: true
     }, function () {
+        // console.log(JSON.stringify(subData));
         $.post("./updateAccount.do",
             {data: JSON.stringify(subData)},
             function (data, status) {
-                if (data != 0 && check(data, status)) {
+                if (data == 1 && check(data, status)) {
 
-                    var htm = '<th>' + list[i].account_id + '</th>' +
-                        '<th>' + list[i].department + '</th>' +
-                        '<th>' + list[i].user_name + '</th>';
+                    var htm = '<th>' + subData.account_id + '</th>' +
+                        '<th>' + subData.department + '</th>' +
+                        '<th>' + subData.user_name + '</th>';
                     $(pubTr).empty();
                     $(pubTr).attr("data",JSON.stringify(subData));
                     $(pubTr).append(htm);
@@ -214,4 +215,19 @@ function resetPassword() {
             }
         );
     });
+}
+
+function promote(){
+    var account_id = $("#account_id").val();
+    $.post(
+        './promote.do',
+        {account_id:account_id},
+        function (data) {
+            if(data == 1){
+                swal('success','账户'+account_id+'已经提升为主管','success')
+            }else {
+                swal('error','权限提升失败','error');
+            }
+        }
+    )
 }

@@ -4,3 +4,26 @@ body{
     background-color: #ffffff;
     margin: 0 0 40px;
 }
+
+.moveRight{
+    margin-left: 50px;
+    font-weight: 600;
+    color: #393B3A;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+.moveRight:hover{
+
+    cursor: pointer;
+}

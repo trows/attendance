@@ -24,7 +24,7 @@
     <div class="myHeadImg">
         <img src="./images/1.jpg">
     </div>
-    <span class="title">hello  </span><span class="name">${account.user_name}</span>
+    <span class="title">hello  </span><span class="name">${account.user_name}</span><a class="moveRight" href="/loginOut.htm">退出登录</a>
     <div class="tip"> 点击下方按钮进行打卡操作！</div>
 
     <div class="punch" onclick="punch()">punch</div>

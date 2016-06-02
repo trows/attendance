@@ -86,4 +86,19 @@ public class Account {
     public void setLevel(int level) {
         this.level = level;
     }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "account_id=" + account_id +
+                ", password='" + password + '\'' +
+                ", user_name='" + user_name + '\'' +
+                ", sex=" + sex +
+                ", age=" + age +
+                ", cellphone='" + cellphone + '\'' +
+                ", email='" + email + '\'' +
+                ", department='" + department + '\'' +
+                ", level=" + level +
+                '}';
+    }
 }
